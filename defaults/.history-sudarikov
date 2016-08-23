@@ -1,0 +1,3 @@
+_T=20160807_15:18:05_31034	 cp ~/kconnect/eman-lite/test/dev.* dev_corpus/.
+_T=20160807_15:18:44_31034	 cp ~/mtmonkey/config-example/appserver.cfg mtmonkey_configs/.
+_T=20160807_15:18:51_31034	 cp ~/mtmonkey/config-example/worker.cfg mtmonkey_configs/.
