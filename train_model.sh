@@ -13,10 +13,8 @@ for neededData in train.tgt train.src dev.tgt dev.src test.tgt test.src mono.tgt
   fi;
 done;
 
-EMAN_LITE_DIR=/auto/brno2/home/sudarikov/kconnect/eman-lite
-EMAN_LITE_TRAIN_SH=train-system.sh
-
-source /auto/brno2/home/sudarikov/.bashrc
+source emankey.train.conf
+#Fix for Eman-lite on MetaCentrum: source /auto/brno2/home/sudarikov/.bashrc
 bash $EMAN_LITE_DIR/$EMAN_LITE_TRAIN_SH \
   --mono $model/mono.tgt \
   --dev-src $model/dev.src \
