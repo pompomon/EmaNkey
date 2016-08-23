@@ -1,12 +1,13 @@
 # EmaNkey
 Project to connect MTMonkey and Eman-Lite
-Requirements
+
+# Requirements
 EmanLite
 MTMonkey
 Boost library
 XMLRPC library
 
-EmaNkey Process:
+# EmaNkey Process:
 1. For each folder in models/*
  a. If model.out not exists:
   - Check if train.tgt and train.src exist
@@ -32,13 +33,13 @@ EmaNkey Process:
 
 
 
-Useful info to run mosesserver from eman-lite:
+# Useful info to run mosesserver from eman-lite:
 1. cd to folder with moses.final.ini
 2. Launch cmd:
 LD_LIBRARY_PATH="<PATH_TO_BOOST>/install/lib/:<PATH_TO_XMLRPC>/lib:$LD_LIBRARY_PATH" <PATH_TO_EMANLITE>/install_dir/mosesdecoder/bin/mosesserver --server 1 --server-port <MOSES_SERVER_PORT> -f <PATH_TO_EMANLITE>/test/workdir/moses.final.ini
 
 
-To run MTMonkey:
+# To run MTMonkey:
 1. cd to mtmonkey main folder
 2. Server cmd:
 python appserver/src/appserver.py -c ../../config-example/appserver.cfg
